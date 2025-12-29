@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Nooma Scroll",
+    "slug": "noomascroll",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "backgroundColor": "#1A1B1E",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "backgroundColor": "#1A1B1E"
+    },
+    "scheme": "noomascroll",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "backgroundColor": "#1A1B1E",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.squelab.instapuzzlegame",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.211290217244-j0od8ofoglacdbv4khfpl1l4ah0kvfd6"
+            ]
+          },
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.211290217244-j0od8ofoglacdbv4khfpl1l4ah0kvfd6"
+            ]
+          }
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "backgroundColor": "#1A1B1E",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#1A1B1E",
+        "monochromeImage": "./assets/images/adaptive-icon.png"
+      },
+      "package": "com.squelab.instapuzzlegame",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          },
+          "android": {
+            "minSdkVersion": 24
+          }
+        }
+      ],
+      "@react-native-firebase/app"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0fdcc82d-ba13-4e90-98c4-565e08dba4cc"
+      }
+    }
+  }
+}
