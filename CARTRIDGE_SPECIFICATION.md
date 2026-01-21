@@ -44,7 +44,7 @@ plugins/games/[game-id]/
 │   ├── grid-logic.ts  # Game rules/mechanics
 │   ├── parser.ts      # Level/data parsing
 │   └── ...            # Other game-specific utilities
-├── tutorial.tsx       # Tutorial component (OPTIONAL)
+├── tutorial.tsx       # Tutorial component (REQUIRED)
 ├── board.tsx          # Board component (OPTIONAL)
 └── levels/            # Level data (OPTIONAL, level-based only)
     ├── easy/
@@ -69,7 +69,7 @@ plugins/games/[game-id]/
   "version": "1.0.0",
   "entryPoint": "index.tsx",
   "display": {
-    "title": "Display Name",
+    "title": "User Name",
     "description": "Short description",
     "themeToken": [1, 5],
     "previewImage": "preview.jpg"
